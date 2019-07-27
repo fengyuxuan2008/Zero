@@ -15,6 +15,7 @@
 		18D5FA7422E7F9EE002099EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA7322E7F9EE002099EA /* main.m */; };
 		18D5FA7E22E7F9EF002099EA /* ZeroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA7D22E7F9EF002099EA /* ZeroTests.m */; };
 		18D5FA8922E7F9EF002099EA /* ZeroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA8822E7F9EF002099EA /* ZeroUITests.m */; };
+		18D5FA9822EB0F25002099EA /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA9722EB0F25002099EA /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		18D5FA8422E7F9EF002099EA /* ZeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D5FA8822E7F9EF002099EA /* ZeroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZeroUITests.m; sourceTree = "<group>"; };
 		18D5FA8A22E7F9EF002099EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D5FA9622EB0F25002099EA /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		18D5FA9722EB0F25002099EA /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				18D5FA6522E7F9EB002099EA /* AppDelegate.m */,
 				18D5FA6722E7F9EB002099EA /* ViewController.h */,
 				18D5FA6822E7F9EB002099EA /* ViewController.m */,
+				18D5FA9622EB0F25002099EA /* VideoViewController.h */,
+				18D5FA9722EB0F25002099EA /* VideoViewController.m */,
 				18D5FA6A22E7F9EB002099EA /* Main.storyboard */,
 				18D5FA6D22E7F9EE002099EA /* Assets.xcassets */,
 				18D5FA6F22E7F9EE002099EA /* LaunchScreen.storyboard */,
@@ -264,6 +269,7 @@
 			files = (
 				18D5FA6922E7F9EB002099EA /* ViewController.m in Sources */,
 				18D5FA7422E7F9EE002099EA /* main.m in Sources */,
+				18D5FA9822EB0F25002099EA /* VideoViewController.m in Sources */,
 				18D5FA6622E7F9EB002099EA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
