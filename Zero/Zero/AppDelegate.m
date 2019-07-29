@@ -32,8 +32,8 @@
     UIViewController *viewController4 = [[UIViewController alloc]init];
     viewController4.tabBarItem.title = @"我的";
     viewController4.view.backgroundColor = [UIColor blueColor];
-    viewController4.tabBarItem.image = [UIImage imageNamed:@""];
-    viewController4.tabBarItem.selectedImage = [UIImage imageNamed:@""];
+    viewController4.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
+    viewController4.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
     [tabbarController setViewControllers:@[viewController1,viewController2,viewController3,viewController4]];
     
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:tabbarController];

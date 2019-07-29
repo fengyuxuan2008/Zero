@@ -17,6 +17,8 @@
 		18D5FA8922E7F9EF002099EA /* ZeroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA8822E7F9EF002099EA /* ZeroUITests.m */; };
 		18D5FA9822EB0F25002099EA /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA9722EB0F25002099EA /* VideoViewController.m */; };
 		18D5FA9B22EC05B6002099EA /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA9A22EC05B6002099EA /* RecommendViewController.m */; };
+		18D5FA9E22EE9B90002099EA /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA9D22EE9B90002099EA /* NormalTableViewCell.m */; };
+		18D5FAA022EEA992002099EA /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18D5FA9F22EEA992002099EA /* icon.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		18D5FA9722EB0F25002099EA /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		18D5FA9922EC05B6002099EA /* RecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
 		18D5FA9A22EC05B6002099EA /* RecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		18D5FA9C22EE9B90002099EA /* NormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalTableViewCell.h; sourceTree = "<group>"; };
+		18D5FA9D22EE9B90002099EA /* NormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewCell.m; sourceTree = "<group>"; };
+		18D5FA9F22EEA992002099EA /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +112,13 @@
 		18D5FA6322E7F9EB002099EA /* Zero */ = {
 			isa = PBXGroup;
 			children = (
+				18D5FA9F22EEA992002099EA /* icon.bundle */,
 				18D5FA6422E7F9EB002099EA /* AppDelegate.h */,
 				18D5FA6522E7F9EB002099EA /* AppDelegate.m */,
 				18D5FA6722E7F9EB002099EA /* ViewController.h */,
 				18D5FA6822E7F9EB002099EA /* ViewController.m */,
+				18D5FA9C22EE9B90002099EA /* NormalTableViewCell.h */,
+				18D5FA9D22EE9B90002099EA /* NormalTableViewCell.m */,
 				18D5FA9622EB0F25002099EA /* VideoViewController.h */,
 				18D5FA9722EB0F25002099EA /* VideoViewController.m */,
 				18D5FA9922EC05B6002099EA /* RecommendViewController.h */,
@@ -245,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D5FAA022EEA992002099EA /* icon.bundle in Resources */,
 				18D5FA7122E7F9EE002099EA /* LaunchScreen.storyboard in Resources */,
 				18D5FA6E22E7F9EE002099EA /* Assets.xcassets in Resources */,
 				18D5FA6C22E7F9EB002099EA /* Main.storyboard in Resources */,
@@ -276,6 +285,7 @@
 				18D5FA9B22EC05B6002099EA /* RecommendViewController.m in Sources */,
 				18D5FA7422E7F9EE002099EA /* main.m in Sources */,
 				18D5FA9822EB0F25002099EA /* VideoViewController.m in Sources */,
+				18D5FA9E22EE9B90002099EA /* NormalTableViewCell.m in Sources */,
 				18D5FA6622E7F9EB002099EA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

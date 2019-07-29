@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NormalTableViewCell.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -18,8 +19,8 @@
     if (self) {
         self = [super init];
         self.tabBarItem.title = @"新闻";
-        self.tabBarItem.image = [UIImage imageNamed:@""];
-        self.tabBarItem.selectedImage = [UIImage imageNamed:@""];
+        self.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
     }
     return self;
 }
@@ -42,10 +43,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
-    cell.textLabel.text = [NSString stringWithFormat:@"主标题-%ld",(long)indexPath.row];
-    cell.detailTextLabel.text = @"副标题";
-    cell.imageView.image = [UIImage imageNamed:@""];
+    NormalTableViewCell *cell = [[NormalTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+    [cell layoutTableViewCell];
     return cell;
 }
 
