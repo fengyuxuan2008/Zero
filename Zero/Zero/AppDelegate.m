@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "VideoViewController.h"
+#import "RecommendViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -26,11 +27,7 @@
     
     VideoViewController *viewController2 = [[VideoViewController alloc]init];
     
-    UIViewController *viewController3 = [[UIViewController alloc]init];
-    viewController3.tabBarItem.title = @"推荐";
-    viewController3.view.backgroundColor = [UIColor yellowColor];
-    viewController3.tabBarItem.image = [UIImage imageNamed:@""];
-    viewController3.tabBarItem.selectedImage = [UIImage imageNamed:@""];
+    RecommendViewController *viewController3 = [[RecommendViewController alloc]init];
     
     UIViewController *viewController4 = [[UIViewController alloc]init];
     viewController4.tabBarItem.title = @"我的";
