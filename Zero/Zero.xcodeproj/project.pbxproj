@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186007E822F8297100C9F1D0 /* DeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186007E722F8297100C9F1D0 /* DeleteCellView.m */; };
 		18D5FA6622E7F9EB002099EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA6522E7F9EB002099EA /* AppDelegate.m */; };
 		18D5FA6922E7F9EB002099EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA6822E7F9EB002099EA /* ViewController.m */; };
 		18D5FA6C22E7F9EB002099EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D5FA6A22E7F9EB002099EA /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186007E622F8297100C9F1D0 /* DeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteCellView.h; sourceTree = "<group>"; };
+		186007E722F8297100C9F1D0 /* DeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteCellView.m; sourceTree = "<group>"; };
 		18D5FA6122E7F9EB002099EA /* Zero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D5FA6422E7F9EB002099EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18D5FA6522E7F9EB002099EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				18D5FA6522E7F9EB002099EA /* AppDelegate.m */,
 				18D5FA6722E7F9EB002099EA /* ViewController.h */,
 				18D5FA6822E7F9EB002099EA /* ViewController.m */,
+				186007E622F8297100C9F1D0 /* DeleteCellView.h */,
+				186007E722F8297100C9F1D0 /* DeleteCellView.m */,
 				18F05A8C22F2CC8800075047 /* DetailViewController.h */,
 				18F05A8D22F2CC8800075047 /* DetailViewController.m */,
 				18D5FA9C22EE9B90002099EA /* NormalTableViewCell.h */,
@@ -287,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D5FA6922E7F9EB002099EA /* ViewController.m in Sources */,
+				186007E822F8297100C9F1D0 /* DeleteCellView.m in Sources */,
 				18D5FA9B22EC05B6002099EA /* RecommendViewController.m in Sources */,
 				18D5FA7422E7F9EE002099EA /* main.m in Sources */,
 				18D5FA9822EB0F25002099EA /* VideoViewController.m in Sources */,
