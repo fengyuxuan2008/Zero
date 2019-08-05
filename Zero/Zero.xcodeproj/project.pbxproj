@@ -19,6 +19,7 @@
 		18D5FA9B22EC05B6002099EA /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA9A22EC05B6002099EA /* RecommendViewController.m */; };
 		18D5FA9E22EE9B90002099EA /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA9D22EE9B90002099EA /* NormalTableViewCell.m */; };
 		18D5FAA022EEA992002099EA /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18D5FA9F22EEA992002099EA /* icon.bundle */; };
+		18F05A8E22F2CC8800075047 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F05A8D22F2CC8800075047 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		18D5FA9C22EE9B90002099EA /* NormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalTableViewCell.h; sourceTree = "<group>"; };
 		18D5FA9D22EE9B90002099EA /* NormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewCell.m; sourceTree = "<group>"; };
 		18D5FA9F22EEA992002099EA /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
+		18F05A8C22F2CC8800075047 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		18F05A8D22F2CC8800075047 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				18D5FA6522E7F9EB002099EA /* AppDelegate.m */,
 				18D5FA6722E7F9EB002099EA /* ViewController.h */,
 				18D5FA6822E7F9EB002099EA /* ViewController.m */,
+				18F05A8C22F2CC8800075047 /* DetailViewController.h */,
+				18F05A8D22F2CC8800075047 /* DetailViewController.m */,
 				18D5FA9C22EE9B90002099EA /* NormalTableViewCell.h */,
 				18D5FA9D22EE9B90002099EA /* NormalTableViewCell.m */,
 				18D5FA9622EB0F25002099EA /* VideoViewController.h */,
@@ -287,6 +292,7 @@
 				18D5FA9822EB0F25002099EA /* VideoViewController.m in Sources */,
 				18D5FA9E22EE9B90002099EA /* NormalTableViewCell.m in Sources */,
 				18D5FA6622E7F9EB002099EA /* AppDelegate.m in Sources */,
+				18F05A8E22F2CC8800075047 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@
 @property(nonatomic, strong, readwrite)UILabel *timeLabel;
 
 @property(nonatomic, strong, readwrite)UIImageView *rightImageView;
-
+@property(nonatomic, strong, readwrite)UIButton *deleteButton;
 @end
 
 @implementation NormalTableViewCell
@@ -55,6 +55,15 @@
             self.rightImageView = [[UIImageView alloc]initWithFrame:CGRectMake(300, 15, 100, 70)];
             self.rightImageView;
         })];
+        
+        [self.contentView addSubview:({
+            self.deleteButton = [[UIButton alloc]initWithFrame:CGRectMake(260, 80, 30, 20)];
+            self.deleteButton.backgroundColor = [UIColor blueColor];
+            [self.deleteButton setTitle:@"X" forState:UIControlStateNormal];
+            [self.deleteButton setTitle:@"V" forState:UIControlStateHighlighted];
+            [self.deleteButton addTarget:self action:@selector(deleteButtonClick) forControlEvents:UIControlEventTouchUpInside];
+            self.deleteButton;
+        })];
     }
     return self;
 }
@@ -73,6 +82,10 @@
     self.timeLabel.frame = CGRectMake(self.commentLabel.frame.origin.x + self.commentLabel.frame.size.width + 15, self.timeLabel.frame.origin.y, self.timeLabel.frame.size.width, self.timeLabel.frame.size.height);
     
     self.rightImageView.image = [UIImage imageNamed:@"icon.bundle/time.jpeg"];
+}
+
+- (void)deleteButtonClick{
+    NSLog(@"deleteButtonClick");
 }
 
 @end

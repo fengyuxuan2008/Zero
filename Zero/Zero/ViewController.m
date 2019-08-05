@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "NormalTableViewCell.h"
-
+#import "DetailViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -53,7 +53,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UIViewController *vc = [[UIViewController alloc]init];
+    DetailViewController *vc = [[DetailViewController alloc]init];
     vc.view.backgroundColor = [UIColor whiteColor];
     vc.title = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
