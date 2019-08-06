@@ -6,17 +6,17 @@
 //  Copyright © 2019 apple. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "NewsViewController.h"
 #import "NormalTableViewCell.h"
 #import "DetailViewController.h"
 #import "DeleteCellView.h"
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,NormalTableViewCellDelegate>
+@interface NewsViewController ()<UITableViewDelegate,UITableViewDataSource,NormalTableViewCellDelegate>
 @property(nonatomic, strong, readwrite)UITableView *tableView;
 @property(nonatomic, strong, readwrite)NSMutableArray *dataArray;
 @end
 
-@implementation ViewController
-
+@implementation NewsViewController
+#pragma mark - life cycle
 - (instancetype)init{
     if (self) {
         self = [super init];
@@ -39,7 +39,7 @@
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
 }
-
+#pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }

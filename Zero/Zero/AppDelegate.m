@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "NewsViewController.h"
 #import "VideoViewController.h"
 #import "RecommendViewController.h"
 @interface AppDelegate ()
@@ -23,18 +23,18 @@
     
     UITabBarController *tabbarController = [[UITabBarController alloc]init];
     
-    ViewController *viewController1 = [[ViewController alloc]init];
+    NewsViewController *newsController = [[NewsViewController alloc]init];
     
-    VideoViewController *viewController2 = [[VideoViewController alloc]init];
+    VideoViewController *videoController = [[VideoViewController alloc]init];
     
-    RecommendViewController *viewController3 = [[RecommendViewController alloc]init];
+    RecommendViewController *recommendController = [[RecommendViewController alloc]init];
     
-    UIViewController *viewController4 = [[UIViewController alloc]init];
-    viewController4.tabBarItem.title = @"我的";
-    viewController4.view.backgroundColor = [UIColor blueColor];
-    viewController4.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
-    viewController4.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
-    [tabbarController setViewControllers:@[viewController1,viewController2,viewController3,viewController4]];
+    UIViewController *mineController = [[UIViewController alloc]init];
+    mineController.tabBarItem.title = @"我的";
+    mineController.view.backgroundColor = [UIColor blueColor];
+    mineController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
+    mineController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
+    [tabbarController setViewControllers:@[newsController,videoController,recommendController,mineController]];
     
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:tabbarController];
     self.window.rootViewController = navi;

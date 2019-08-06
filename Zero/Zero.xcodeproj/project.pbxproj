@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		186007E822F8297100C9F1D0 /* DeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186007E722F8297100C9F1D0 /* DeleteCellView.m */; };
 		18D5FA6622E7F9EB002099EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA6522E7F9EB002099EA /* AppDelegate.m */; };
-		18D5FA6922E7F9EB002099EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA6822E7F9EB002099EA /* ViewController.m */; };
+		18D5FA6922E7F9EB002099EA /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA6822E7F9EB002099EA /* NewsViewController.m */; };
 		18D5FA6C22E7F9EB002099EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D5FA6A22E7F9EB002099EA /* Main.storyboard */; };
 		18D5FA6E22E7F9EE002099EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D5FA6D22E7F9EE002099EA /* Assets.xcassets */; };
 		18D5FA7122E7F9EE002099EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D5FA6F22E7F9EE002099EA /* LaunchScreen.storyboard */; };
@@ -46,8 +46,8 @@
 		18D5FA6122E7F9EB002099EA /* Zero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D5FA6422E7F9EB002099EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18D5FA6522E7F9EB002099EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18D5FA6722E7F9EB002099EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18D5FA6822E7F9EB002099EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18D5FA6722E7F9EB002099EA /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		18D5FA6822E7F9EB002099EA /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		18D5FA6B22E7F9EB002099EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18D5FA6D22E7F9EE002099EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D5FA7022E7F9EE002099EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,8 +121,8 @@
 				18D5FA9F22EEA992002099EA /* icon.bundle */,
 				18D5FA6422E7F9EB002099EA /* AppDelegate.h */,
 				18D5FA6522E7F9EB002099EA /* AppDelegate.m */,
-				18D5FA6722E7F9EB002099EA /* ViewController.h */,
-				18D5FA6822E7F9EB002099EA /* ViewController.m */,
+				18D5FA6722E7F9EB002099EA /* NewsViewController.h */,
+				18D5FA6822E7F9EB002099EA /* NewsViewController.m */,
 				186007E622F8297100C9F1D0 /* DeleteCellView.h */,
 				186007E722F8297100C9F1D0 /* DeleteCellView.m */,
 				18F05A8C22F2CC8800075047 /* DetailViewController.h */,
@@ -291,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D5FA6922E7F9EB002099EA /* ViewController.m in Sources */,
+				18D5FA6922E7F9EB002099EA /* NewsViewController.m in Sources */,
 				186007E822F8297100C9F1D0 /* DeleteCellView.m in Sources */,
 				18D5FA9B22EC05B6002099EA /* RecommendViewController.m in Sources */,
 				18D5FA7422E7F9EE002099EA /* main.m in Sources */,
