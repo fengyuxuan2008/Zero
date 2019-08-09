@@ -10,9 +10,12 @@
 #import "NormalTableViewCell.h"
 #import "DetailViewController.h"
 #import "DeleteCellView.h"
+#import "ListLoader.h"
+#import "ListItem.h"
 @interface NewsViewController ()<UITableViewDelegate,UITableViewDataSource,NormalTableViewCellDelegate>
 @property(nonatomic, strong, readwrite)UITableView *tableView;
-@property(nonatomic, strong, readwrite)NSMutableArray *dataArray;
+@property(nonatomic, strong, readwrite)NSArray *dataArray;
+@property(nonatomic, strong, readwrite)ListLoader *listLoader;
 @end
 
 @implementation NewsViewController
@@ -23,10 +26,6 @@
         self.tabBarItem.title = @"新闻";
         self.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
         self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
-        self.dataArray = @[].mutableCopy;
-        for (int i = 0; i < 20; i++) {
-            [_dataArray addObject:@(i)];
-        }
     }
     return self;
 }
@@ -38,6 +37,15 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
+    
+    self.listLoader = [[ListLoader alloc]init];
+    __weak typeof(self)weakSelf = self;
+    
+    [self.listLoader loadListDataWithFinishBlock:^(BOOL success, NSArray<ListItem *> * _Nonnull dataArray) {
+         __strong typeof(self)strongSelf = weakSelf;
+        strongSelf.dataArray = dataArray;
+        [strongSelf.tableView reloadData];
+    }];
 }
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -50,7 +58,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NormalTableViewCell *cell = [[NormalTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
-    [cell layoutTableViewCell];
+    [cell layoutTableViewCellWithItem:[self.dataArray objectAtIndex:indexPath.row]];
     cell.delegate = self;
     return cell;
 }
@@ -60,7 +68,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    DetailViewController *vc = [[DetailViewController alloc]init];
+    ListItem *item = [self.dataArray objectAtIndex:indexPath.row];
+    DetailViewController *vc = [[DetailViewController alloc]initWithUrlString:item.articleUrl];
     vc.view.backgroundColor = [UIColor whiteColor];
     vc.title = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
@@ -76,7 +85,6 @@
     [deleteView showDeleteCellViewFromPoint:rect.origin clickBlock:^{
         
         __strong typeof(self)strongSelf = weakSelf;
-        [strongSelf.dataArray removeLastObject];
         //删除cell
        [strongSelf.tableView deleteRowsAtIndexPaths:@[[strongSelf.tableView indexPathForCell:tableViewCell]] withRowAnimation:UITableViewRowAnimationAutomatic];
         

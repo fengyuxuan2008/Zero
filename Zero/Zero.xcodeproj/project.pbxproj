@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185FBEC822FD6B860050EF2A /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FBEC722FD6B860050EF2A /* ListItem.m */; };
 		186007E822F8297100C9F1D0 /* DeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186007E722F8297100C9F1D0 /* DeleteCellView.m */; };
+		186007ED22F9591C00C9F1D0 /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 186007EC22F9591C00C9F1D0 /* ListLoader.m */; };
 		18D5FA6622E7F9EB002099EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA6522E7F9EB002099EA /* AppDelegate.m */; };
 		18D5FA6922E7F9EB002099EA /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA6822E7F9EB002099EA /* NewsViewController.m */; };
 		18D5FA6C22E7F9EB002099EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D5FA6A22E7F9EB002099EA /* Main.storyboard */; };
@@ -21,6 +23,7 @@
 		18D5FA9E22EE9B90002099EA /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5FA9D22EE9B90002099EA /* NormalTableViewCell.m */; };
 		18D5FAA022EEA992002099EA /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18D5FA9F22EEA992002099EA /* icon.bundle */; };
 		18F05A8E22F2CC8800075047 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F05A8D22F2CC8800075047 /* DetailViewController.m */; };
+		AB0CB4AFA4E77DCC6B1905E8 /* libPods-Zero.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 161D61E5850B49386F4C78A2 /* libPods-Zero.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		161D61E5850B49386F4C78A2 /* libPods-Zero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zero.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		185FBEC622FD6B860050EF2A /* ListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
+		185FBEC722FD6B860050EF2A /* ListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
 		186007E622F8297100C9F1D0 /* DeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteCellView.h; sourceTree = "<group>"; };
 		186007E722F8297100C9F1D0 /* DeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteCellView.m; sourceTree = "<group>"; };
+		186007EB22F9591C00C9F1D0 /* ListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListLoader.h; sourceTree = "<group>"; };
+		186007EC22F9591C00C9F1D0 /* ListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListLoader.m; sourceTree = "<group>"; };
 		18D5FA6122E7F9EB002099EA /* Zero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D5FA6422E7F9EB002099EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18D5FA6522E7F9EB002099EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +76,8 @@
 		18D5FA9F22EEA992002099EA /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		18F05A8C22F2CC8800075047 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		18F05A8D22F2CC8800075047 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B7F347EF3D5BD6009767E1E5 /* Pods-Zero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zero/Pods-Zero.debug.xcconfig"; sourceTree = "<group>"; };
+		D5BC964D6404B09BA4C0CC98 /* Pods-Zero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zero.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zero/Pods-Zero.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0CB4AFA4E77DCC6B1905E8 /* libPods-Zero.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +106,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185FBEC522FD69940050EF2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185FBEC622FD6B860050EF2A /* ListItem.h */,
+				185FBEC722FD6B860050EF2A /* ListItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		186007EA22F9590000C9F1D0 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				186007EB22F9591C00C9F1D0 /* ListLoader.h */,
+				186007EC22F9591C00C9F1D0 /* ListLoader.m */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
 		18D5FA5822E7F9EB002099EA = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +131,8 @@
 				18D5FA7C22E7F9EF002099EA /* ZeroTests */,
 				18D5FA8722E7F9EF002099EA /* ZeroUITests */,
 				18D5FA6222E7F9EB002099EA /* Products */,
+				2CDB8D62844B9A580CC5E869 /* Pods */,
+				9173AA0E7B86D7B4DB236384 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +149,8 @@
 		18D5FA6322E7F9EB002099EA /* Zero */ = {
 			isa = PBXGroup;
 			children = (
+				185FBEC522FD69940050EF2A /* Model */,
+				186007EA22F9590000C9F1D0 /* Loader */,
 				18D5FA9F22EEA992002099EA /* icon.bundle */,
 				18D5FA6422E7F9EB002099EA /* AppDelegate.h */,
 				18D5FA6522E7F9EB002099EA /* AppDelegate.m */,
@@ -160,6 +193,23 @@
 			path = ZeroUITests;
 			sourceTree = "<group>";
 		};
+		2CDB8D62844B9A580CC5E869 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7F347EF3D5BD6009767E1E5 /* Pods-Zero.debug.xcconfig */,
+				D5BC964D6404B09BA4C0CC98 /* Pods-Zero.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9173AA0E7B86D7B4DB236384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				161D61E5850B49386F4C78A2 /* libPods-Zero.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D5FA8D22E7F9EF002099EA /* Build configuration list for PBXNativeTarget "Zero" */;
 			buildPhases = (
+				193D66EC6DE21364DF5155D2 /* [CP] Check Pods Manifest.lock */,
 				18D5FA5D22E7F9EB002099EA /* Sources */,
 				18D5FA5E22E7F9EB002099EA /* Frameworks */,
 				18D5FA5F22E7F9EB002099EA /* Resources */,
@@ -286,6 +337,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		193D66EC6DE21364DF5155D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zero-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18D5FA5D22E7F9EB002099EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -299,6 +371,8 @@
 				18D5FA9E22EE9B90002099EA /* NormalTableViewCell.m in Sources */,
 				18D5FA6622E7F9EB002099EA /* AppDelegate.m in Sources */,
 				18F05A8E22F2CC8800075047 /* DetailViewController.m in Sources */,
+				185FBEC822FD6B860050EF2A /* ListItem.m in Sources */,
+				186007ED22F9591C00C9F1D0 /* ListLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,9 +541,11 @@
 		};
 		18D5FA8E22E7F9EF002099EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7F347EF3D5BD6009767E1E5 /* Pods-Zero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Zero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,15 +553,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = apple.Zero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		18D5FA8F22E7F9EF002099EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BC964D6404B09BA4C0CC98 /* Pods-Zero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Zero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,7 +571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = apple.Zero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
