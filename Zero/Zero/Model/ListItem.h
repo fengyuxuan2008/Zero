@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  列表结构化数据
  */
-@interface ListItem : NSObject
+@interface ListItem : NSObject<NSSecureCoding>
 @property(nonatomic, copy, readwrite)NSString *title;
 @property(nonatomic, copy, readwrite)NSString *date;
 @property(nonatomic, copy, readwrite)NSString *uniquekey;
