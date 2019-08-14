@@ -73,6 +73,8 @@
     vc.view.backgroundColor = [UIColor whiteColor];
     vc.title = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:item.uniquekey];
 }
 - (void)tableViewCell: (UITableViewCell*)tableViewCell clickDeleteButton: (UIButton *)deleteButton{
     DeleteCellView *deleteView = [[DeleteCellView alloc]initWithFrame:self.view.bounds];

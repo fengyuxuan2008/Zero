@@ -71,6 +71,12 @@
 }
 
 - (void)layoutTableViewCellWithItem:(ListItem *)item{
+    
+    BOOL hasRead = [[NSUserDefaults standardUserDefaults] boolForKey:item.uniquekey];
+    if (hasRead == YES) {
+        self.titleLabel.textColor = [UIColor grayColor];
+    }
+    
     self.titleLabel.text = item.title;
     self.sourceLabel.text = item.authorName;
     [self.sourceLabel sizeToFit];

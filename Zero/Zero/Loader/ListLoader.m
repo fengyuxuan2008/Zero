@@ -10,6 +10,12 @@
 #import "ListItem.h"
 @implementation ListLoader
 - (void)loadListDataWithFinishBlock:(ListLoaderFinishBlock)finishBlock{
+    
+    NSArray<ListItem *> *listData = [self _readDtaFromLocal];
+    if (listData) {
+        finishBlock(YES,listData);
+    }
+    
     NSString *urlString = @"http://v.juhe.cn/toutiao/index?type=top&key=97ad001bfcc2082e2eeaf798bad3d54e";
     NSURL *listUrl = [NSURL URLWithString:urlString];
     
@@ -41,6 +47,21 @@
     [dataTask resume];
     
 }
+#pragma mark - private method
+- (NSArray<ListItem *> *)_readDtaFromLocal{
+    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cachePath = [pathArray firstObject];
+    NSString *listDataPaht = [cachePath stringByAppendingPathComponent:@"GTData/list"];
+    
+    NSData *readListData = [[NSFileManager defaultManager] contentsAtPath:listDataPaht];
+    
+    id unarchiveObj = [NSKeyedUnarchiver unarchivedObjectOfClasses:[NSSet setWithObjects:[NSArray class],[ListItem class], nil] fromData:readListData error:nil];
+    
+    if ([unarchiveObj isKindOfClass:[NSArray class]] && [unarchiveObj count] > 0) {
+        return (NSArray<ListItem *> *)unarchiveObj;
+    }
+    return nil;
+}
 
 - (void)_archiveListDataWithArray:(NSArray<ListItem *> *)array{
    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
@@ -56,11 +77,6 @@
     NSData *listData = [NSKeyedArchiver archivedDataWithRootObject:array requiringSecureCoding:YES error:nil];
     
     [fileManager createFileAtPath:listDataPaht contents:listData attributes:nil];
-    
-    
-    NSData *readListData = [fileManager contentsAtPath:listDataPaht];
-    
-   id unarchiveObj = [NSKeyedUnarchiver unarchivedObjectOfClasses:[NSSet setWithObjects:[NSArray class],[ListItem class], nil] fromData:readListData error:nil];
     
     
     //查询文件
