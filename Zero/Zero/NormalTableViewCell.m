@@ -8,6 +8,8 @@
 
 #import "NormalTableViewCell.h"
 #import "ListItem.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIView+WebCache.h>
 @interface NormalTableViewCell()
 @property(nonatomic, strong, readwrite)UILabel *titleLabel;
 @property(nonatomic, strong, readwrite)UILabel *sourceLabel;
@@ -96,15 +98,22 @@
 //    downloadImageThread.name = @"downloadImageThread";
 //    [downloadImageThread start];
     
-    dispatch_queue_global_t downloadQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_queue_main_t mainQueue = dispatch_get_main_queue();
+//    dispatch_queue_global_t downloadQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//    dispatch_queue_main_t mainQueue = dispatch_get_main_queue();
+//
+//    dispatch_async(downloadQueue, ^{
+//         UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:item.picUrl]]];
+//        dispatch_async(mainQueue, ^{
+//             self.rightImageView.image = image;
+//        });
+//    });
+    //添加默认的 progress indicator
+    [self.rightImageView sd_setShowActivityIndicatorView:YES];
+    [self.rightImageView sd_setIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:item.picUrl] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        
+    }];
     
-    dispatch_async(downloadQueue, ^{
-         UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:item.picUrl]]];
-        dispatch_async(mainQueue, ^{
-             self.rightImageView.image = image;
-        });
-    });
 }
 
 - (void)deleteButtonClick{

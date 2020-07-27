@@ -1,3 +1,4 @@
 target 'Zero' do
 	pod 'AFNetworking'
+    pod 'SDWebImage'
 end
